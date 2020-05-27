@@ -17,7 +17,21 @@ button{
      margin-bottom: 9px;
      margin-top: 9px;
      }
-
+     h3{
+      font-size: 24px; 
+      color: red;
+      display: flex;
+      flex-direction: column;
+    }
+     h2{
+        font-size: 35px;
+        color: black;
+      }
+      h3{
+        color: #F6f7d7;
+      }
+    
+    
      h4{
         font-size: 32px;
         color: @mainColor;
@@ -30,8 +44,56 @@ button{
         margin-bottom: @mrginbottom;
       }
 
-      .contact{
-        text-align: center;
-        justify-content: center;
-      }
+      
+
+      @media(max-width: 1000px){
+         nav a{
+         color: @thrdColor;
+         }
+       .Steps .box{
+         display: Flex;
+         justify-content: center;
+       }
+       .top-content{
+         display: flex;
+       flex-direction: center;
+       }
+     // media for 1000px ends//
      
+     // media 800px Begins//
+     @media (min-width: 800px){
+         .box{
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 30px;
+         color: #F6f7d7;
+         text-align: center;
+         font-size: 25px;
+       }
+       // media 500px begins//
+
+       @media (min-width: 500px) {
+        .box{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 30px;
+          color: #F6f7d7;
+          text-align: center;
+          font-size: 25px;
+        }
+        nav a{
+          color: @Color2;
+        }
+      }
+
+       .Steps {
+         width: 40%;
+         height: 45;
+         margin-bottom: 15px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin-left: 25%;
+       }
+      }
+    }
