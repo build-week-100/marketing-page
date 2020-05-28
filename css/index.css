@@ -187,6 +187,9 @@ nav a {
   text-decoration: none;
   color: black;
 }
+* {
+  overflow-x: hidden;
+}
 .Steps {
   display: flex;
   flex-direction: row;
@@ -258,6 +261,11 @@ h5 {
     text-align: center;
     font-size: 25px;
   }
+  .box {
+    margin-bottom: 10px;
+    border-radius: 7px;
+    width: 50%;
+  }
 }
 @media (max-width: 500px) {
   .Steps {
@@ -266,6 +274,10 @@ h5 {
     color: #F6f7d7;
     text-align: center;
     font-size: 25px;
+  }
+  .box {
+    margin-bottom: 10px;
+    border-radius: 5px;
   }
 }
 footer {
