@@ -1,3 +1,9 @@
+
+.Steps{
+  display: flex;
+  flex-direction: row;
+}
+
 button{
     padding: 5%;
     display: flex;
@@ -58,42 +64,28 @@ button{
          display: flex;
        flex-direction: center;
        }
+      }
      // media for 1000px ends//
      
      // media 800px Begins//
-     @media (min-width: 800px){
-         .box{
+     @media (max-width: 800px){
+         .Steps{
          display: flex;
          flex-direction: column;
          margin-bottom: 30px;
-         color: #F6f7d7;
+         color: @thrdColor;
          text-align: center;
          font-size: 25px;
        }
+      }
        // media 500px begins//
-
-       @media (min-width: 500px) {
-        .box{
+       @media (max-width: 500px) {
+        .Steps{
           display: flex;
           flex-direction: column;
-          margin-bottom: 30px;
           color: #F6f7d7;
           text-align: center;
           font-size: 25px;
         }
-        nav a{
-          color: @Color2;
-        }
-      }
-
-       .Steps {
-         width: 40%;
-         height: 45;
-         margin-bottom: 15px;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         margin-left: 25%;
        }
-      }
-    }
+      
