@@ -233,6 +233,9 @@ h5 {
 .web {
   margin-bottom: 20px;
 }
+.contact2 {
+  background-color: green;
+}
 @media (max-width: 1000px) {
   nav a {
     color: green;
