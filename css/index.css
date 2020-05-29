@@ -75,6 +75,11 @@ h2 {
   text-align: center;
   justify-content: center;
 }
+.web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 html,
 body,
 div,
@@ -280,6 +285,7 @@ h5 {
 footer {
   background-color: red;
   height: 70px;
+  width: 100%;
 }
 footer a {
   width: 100%;
