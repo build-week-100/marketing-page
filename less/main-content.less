@@ -7,7 +7,7 @@
   flex-direction: row;
 }
 
-button{
+   button{
     padding: 5%;
     display: flex;
     flex-direction: center;
@@ -18,7 +18,7 @@ button{
    }
    
    button{
-     background-color: @mainColor;
+     .button();
      width: 50%;
      color: @thrdColor;
      border-color: @mainColor;
@@ -26,9 +26,89 @@ button{
      margin-bottom: 9%;
      margin-top: 9px;
      }
+     .Steps{
+      margin-top: 10%;
+      margin-bottom: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-items: space-between;
+      margin-right: 10px;
+      align-items: center;
+      width: @width;
+    
+    
+      .box{
+        color: black;
+        display: flex;
+        flex-direction: column;
+        background-color: @mainColor;
+        font-size: 17px;
+        padding: 60px;
+        width: 40%;
+     } 
+    }
+    
+    @media @phoneL{
+      .Steps .box{
+        display: Flex;
+        justify-content: center;
+      }
+    }
+    @media @phoneM{
+    .Steps{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      color: @thrdColor;
+      text-align: center;
+      font-size: 25px;
+      .box{
+        margin-bottom: 10px;
+        border-radius: 7px;
+        width: 50%;
+      }
+    }
+  }
+@media @phoneS{
+  .Steps{
+    display: flex;
+    flex-direction: column;
+    color: #F6f7d7;
+    text-align: center;
+    font-size: 25px;
+  }
+  .box{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 25%
+  }
+  }
+
+    .middle-content{
+     font: @mainFont;
+     display: flex;
+     word-wrap:column;
+     text-align: center;
+     font-size: 24px;
+     width: 65%;
+     margin-left: 20%;
+     margin-bottom: 5%;
+    }
+    .box {  
+      display: flex;
+      flex-direction: column;
+      background-color: @mainColor; 
+    }
+    
+    .threeSteps, h2{
+      color: @mainColor;
+    }
+    .middle-content h2{
+      font-size: 1.4rem;
+    }
      h3{
       font-size: 24px; 
-      color: red;
+      color: @thrdColor;
       display: flex;
       flex-direction: column;
     }
@@ -59,55 +139,18 @@ button{
       .contact2{
         background-color: @thrdColor;
       }
-
-      @media(max-width: 1000px){
-         nav a{
-         color: @thrdColor;
-         }
-       .Steps .box{
-         display: Flex;
-         justify-content: center;
-       }
-       .top-content{
-         display: flex;
-       flex-direction: center;
-       }
+      .top-content h1{
+        margin-left: 30%;
+        margin-top: 9px;
+        font-size: 35px;
+        margin-bottom: 20%;
+        font: @mainFont;
+        color: @thrdColor;
+        justify-content: center;
       }
-      
-     // media for 1000px ends//
-     
-     // media 800px Begins//
-     @media (max-width: 800px){
-         .Steps{
-         display: flex;
-         flex-direction: column;
-         margin-bottom: 30px;
-         color: @thrdColor;
-         text-align: center;
-         font-size: 25px;
-       }
-      .box{
-        margin-bottom: 10px;
-        border-radius: 7px;
-        width: 50%;
-      }
-      }
-       // media 500px begins//
-       @media (max-width: 500px) {
-        .Steps{
+      @media @phoneL{
+        .top-content{
           display: flex;
-          flex-direction: column;
-          color: #F6f7d7;
-          text-align: center;
-          font-size: 25px;
-        }
-        .box{
-          margin-bottom: 10px;
-          border-radius: 5px;
-          width: 25%;
-          
-        }
-        }
-
-       
-      
+        flex-direction: center;
+      }
+    }
