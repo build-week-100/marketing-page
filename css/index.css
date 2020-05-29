@@ -147,7 +147,7 @@ button {
   font-size: 1.6rem;
   text-decoration: none;
 }
-button {
+button button {
   background-color: #FF9A00;
   width: 35%;
   height: 20%;
